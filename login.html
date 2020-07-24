@@ -22,7 +22,7 @@
     <!-- 登录的div -->
     <div class="login-box">
       <!-- 登陆的表单 -->
-      <form class="layui-form" action="">
+      <form class="layui-form" action="" id="form_login">
         <!-- 用户名 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-username"></i>
@@ -32,8 +32,8 @@
         <!-- 密码 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-password"></i>
-          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
-            class="layui-input">
+          <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+            autocomplete="off" class="layui-input">
 
         </div>
         <!-- 登录按钮 -->
@@ -59,15 +59,15 @@
         <!-- 密码 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-password"></i>
-          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off"
-            class="layui-input">
+          <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+            autocomplete="off" class="layui-input">
 
         </div>
         <!-- 密码确认 -->
         <div class="layui-form-item">
           <i class="layui-icon layui-icon-password"></i>
-          <input type="password" name="repassword" required lay-verify="required" placeholder="再次确认密码" autocomplete="off"
-            class="layui-input">
+          <input type="password" name="repassword" required lay-verify="required|pwd" placeholder="再次确认密码"
+            autocomplete="off" class="layui-input">
 
         </div>
         <!-- 注册按钮 -->
@@ -82,10 +82,14 @@
 
     </div>
   </div>
+  <!-- 导入layui的 js -->
+  <script src="./assets/lib/layui/layui.all.js"></script>
   <!-- 导入jquery -->
   <script src="assets/lib/jquery.js"></script>
   <!-- 导入自己的javascript脚本 -->
   <script src="assets/js/login.js"></script>
+  <!--  -->
+  <script src="./assets/js/baseAPI.js"></script>
 </body>
 
 </html>
